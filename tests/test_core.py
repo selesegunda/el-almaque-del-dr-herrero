@@ -2,7 +2,7 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
-from almaque.collect import topic_for, normalize_doi, classify_official
+from almaque.collect import topic_for, normalize_doi, classify_official, allowed_host, pubmed_query
 from almaque.store import merge
 from almaque.render import render
 
@@ -12,6 +12,19 @@ class CoreTests(unittest.TestCase):
         self.assertIn('Páncreas', topic_for('pancreatic adenocarcinoma'))
         self.assertEqual(classify_official('New colorectal cancer clinical guidelines'), 'Guías y protocolos')
         self.assertEqual(normalize_doi('https://doi.org/10.1000/ABC'), '10.1000/abc')
+
+    def test_endocrine_and_asco_coverage(self):
+        self.assertIn('Neuroendocrinos', topic_for('pancreatic neuroendocrine tumor'))
+        self.assertIn('Neoplasias endocrinas', topic_for('medullary thyroid carcinoma'))
+        self.assertIn('Neoplasias endocrinas', topic_for('adrenocortical carcinoma'))
+        self.assertIn('Neoplasias endocrinas', topic_for('pheochromocytoma'))
+        self.assertIn('Neuroendocrinos', topic_for('pituitary neuroendocrine tumor'))
+        self.assertIn('Neoplasias endocrinas', topic_for('pituitary neuroendocrine tumor'))
+        self.assertTrue(allowed_host('https://ascopubs.org/doi/10.1200/example'))
+        self.assertTrue(allowed_host('https://meetings.asco.org/abstracts-presentations/123'))
+        self.assertFalse(allowed_host('https://not-asco.org/example'))
+        self.assertIn('"medullary thyroid"[Title/Abstract]', pubmed_query())
+        self.assertEqual(classify_official('Neuroendocrine/carcinoid meeting abstract'), 'Comunicaciones científicas')
 
     def test_dedup_and_versions_and_site(self):
         with tempfile.TemporaryDirectory() as d:

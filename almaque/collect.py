@@ -55,7 +55,7 @@ def pubmed_query():
     return f"({terms}) AND (({journals}) OR ({societies}))"
 
 
-def pubmed(days=14, max_records=160):
+def pubmed(days=14, max_records=400):
     today = date.today()
     since = today - timedelta(days=max(1, days))
     base = {"db": "pubmed", "tool": "ElAlmaque", "retmode": "json"}
@@ -90,10 +90,10 @@ def pubmed(days=14, max_records=160):
             continue
         types = [tag_text(x).lower() for x in art.findall("PublicationTypeList/PublicationType")]
         title_lower = title.lower()
-        category = "Guías y protocolos" if ("guideline" in types or "practice guideline" in types or any(k in title_lower for k in GUIDE_WORDS)) else "Artículos científicos"
+        category = "GuÃ­as y protocolos" if ("guideline" in types or "practice guideline" in types or any(k in title_lower for k in GUIDE_WORDS)) else "ArtÃ­culos cientÃ­ficos"
         # Explicit congress/supplement records are communications, never silently label them articles.
         if "congresses" in types or "meeting abstract" in types or "conference abstract" in types:
-            category = "Comunicaciones científicas"
+            category = "Comunicaciones cientÃ­ficas"
         published = node.find(".//PubMedPubDate[@PubStatus='pubmed']")
         if published is None:
             published = art.find("Journal/JournalIssue/PubDate")
@@ -141,15 +141,25 @@ def official_pages():
                 found = 0
                 for anchor in soup.select("a[href]"):
                     title = " ".join(anchor.get_text(" ", strip=True).split())
-                    if not 22 <= len(title) <= 220:
+                    if not 12 <= len(title) <= 220:
                         continue
                     url = urljoin(page, anchor.get("href", ""))
                     if not allowed_host(url) or url.rstrip("/") == page.rstrip("/"):
                         continue
-                    topics = topic_for(title)
-                    category = classify_official(title)
+                    # Publications are selected primarily by their own title. For ASCO
+                    # abstracts with generic link text, allow the enclosing heading.
+                    context = title
+                    parent = anchor.find_parent(["li", "article", "h2", "h3", "h4"])
+                    if parent is not None:
+                        parent_text = " ".join(parent.get_text(" ", strip=True).split())
+                        if len(parent_text) <= 350:
+                            context += " " + parent_text
+                    topics = topic_for(context)
+                    category = classify_official(context)
                     if not topics or not category:
                         continue
+                    # An ASCO article linked to ascopubs.org is an official publisher
+                    # reference, not a full-text scrape. Dates still require checking.
                     # Do not mark as new based on a site's homepage: no reliable publication date.
                     # These become discovery candidates only on first encounter; a configured
                     # persistent baseline prevents re-alerting during subsequent runs.

@@ -1,0 +1,73 @@
+name: Actualizar el almaque
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: 'Días de búsqueda retrospectiva (PubMed)'
+        default: '14'
+        required: false
+  schedule:
+    # First daily phase: 17-23 November 2026, 07:15 UTC = 08:15 Madrid (CET).
+    # GitHub uses UTC for scheduled jobs.
+    - cron: '15 7 17-23 11 *'
+    # Weekly afterwards: Mondays 07:15 UTC (08:15 winter, 09:15 summer Madrid).
+    - cron: '15 7 * * 1'
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: almaque-update
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comprobar ventana de programación
+        id: window
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          SCHEDULE_EXPR: ${{ github.event.schedule }}
+        run: |
+          TODAY=$(date -u +%Y-%m-%d)
+          SHOULD_RUN=true
+          if [ "$EVENT_NAME" = schedule ]; then
+            if [ "$SCHEDULE_EXPR" = '15 7 17-23 11 *' ] && { [[ "$TODAY" < '2026-11-17' ]] || [[ "$TODAY" > '2026-11-23' ]]; }; then SHOULD_RUN=false; fi
+            if [ "$SCHEDULE_EXPR" = '15 7 * * 1' ] && [[ "$TODAY" < '2026-11-30' ]]; then SHOULD_RUN=false; fi
+          fi
+          echo "execute=$SHOULD_RUN" >> "$GITHUB_OUTPUT"
+      - uses: actions/checkout@v4
+        if: steps.window.outputs.execute == 'true' 
+      - uses: actions/setup-python@v5
+        if: steps.window.outputs.execute == 'true'
+        with:
+          python-version: '3.12'
+      - if: steps.window.outputs.execute == 'true'
+        run: pip install -r requirements.txt
+      - name: Recopilar y publicar datos
+        if: steps.window.outputs.execute == 'true'
+        env:
+          NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
+          SEARCH_DAYS: ${{ inputs.days || '14' }}
+        run: python -m almaque --days "$SEARCH_DAYS"
+      - name: Guardar histórico en el repositorio
+        if: steps.window.outputs.execute == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ docs/
+          if ! git diff --cached --quiet; then
+            git commit -m "Actualizar vigilancia bibliográfica"
+            git push
+          fi
+      - name: Configurar Pages
+        if: steps.window.outputs.execute == 'true'
+        uses: actions/configure-pages@v5
+      - name: Subir sitio a Pages
+        if: steps.window.outputs.execute == 'true'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+      - name: Publicar sitio en Pages
+        if: steps.window.outputs.execute == 'true'
+        uses: actions/deploy-pages@v4

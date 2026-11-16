@@ -1,1 +1,982 @@
-{}
+{
+  "pmid:42968372": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Guías y protocolos",
+    "date": "2026 11 2",
+    "description": "",
+    "doi": "10.1093/jnci/djag414",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:42968372",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "42968372",
+    "publisher_url": "https://doi.org/10.1093/jnci/djag414",
+    "signature": "cd5bc93e474c734012d0942766aee7e8f1414d67d9bfe42f55e3bae4a64ef263",
+    "society": "",
+    "source": "Journal of the National Cancer Institute",
+    "title": "Impact of psychosocial interventions on cancer survival: an updated meta-analysis.",
+    "topics": [
+      "Colorrectal"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42968372/",
+    "versions": []
+  },
+  "pmid:42968651": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 2",
+    "description": "",
+    "doi": "10.1158/2159-8290.cd-26-1747",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:42968651",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "42968651",
+    "publisher_url": "https://doi.org/10.1158/2159-8290.cd-26-1747",
+    "signature": "34ed8afeb32f7e7a3d1c634d96bca909e032742058d189b82b7246ebb06a26f3",
+    "society": "",
+    "source": "Cancer discovery",
+    "title": "Breaking Barriers: Gut Pathobionts Promote Hepatocellular Carcinoma.",
+    "topics": [
+      "Hepatocarcinoma"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42968651/",
+    "versions": []
+  },
+  "pmid:42969345": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 2",
+    "description": "",
+    "doi": "10.1158/2159-8290.cd-26-0463",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:42969345",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "42969345",
+    "publisher_url": "https://doi.org/10.1158/2159-8290.cd-26-0463",
+    "signature": "19133e36378931b264357f57336a806090e9d5aac8adec715429d2c6f56cdb8a",
+    "society": "",
+    "source": "Cancer discovery",
+    "title": "Autophagy-mediated Secretion of Intracellular Antigens Co-opts Antibody Responses to Drive Neutrophil-Dependent Tumor Progression.",
+    "topics": [
+      "Hepatocarcinoma"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42969345/",
+    "versions": []
+  },
+  "pmid:42970668": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 2",
+    "description": "",
+    "doi": "10.1200/jco-26-01393",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:42970668",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "42970668",
+    "publisher_url": "https://doi.org/10.1200/jco-26-01393",
+    "signature": "faabe5a42e90faec1321518b49c88761d9e15ebf4f9fe53ac65e39c1bb0e347b",
+    "society": "",
+    "source": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+    "title": "Immunochemotherapy for Borderline Resectable or Locally Advanced Pancreatic Cancer: A Randomized Controlled Trial.",
+    "topics": [
+      "Páncreas"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42970668/",
+    "versions": []
+  },
+  "pmid:42970859": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 2",
+    "description": "",
+    "doi": "10.1016/j.esmoop.2026.108616",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:42970859",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "42970859",
+    "publisher_url": "https://doi.org/10.1016/j.esmoop.2026.108616",
+    "signature": "ce98f70121b4c1556f269061b42c115e25a2c7235f6fd1d1225e238154154ea6",
+    "society": "",
+    "source": "ESMO open",
+    "title": "Estimating the clinical benefit of metastases resection in liver-limited metastatic colorectal cancer: an IPD-based pooled analysis of nine randomized trials.",
+    "topics": [
+      "Colorrectal"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42970859/",
+    "versions": []
+  },
+  "pmid:42970860": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 2",
+    "description": "",
+    "doi": "10.1016/j.esmoop.2026.108613",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:42970860",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "42970860",
+    "publisher_url": "https://doi.org/10.1016/j.esmoop.2026.108613",
+    "signature": "f0f0ec4f9405e335b68a57dd1cb326b4c0f038f5ed1c63ec14f217009bb4dcfa",
+    "society": "",
+    "source": "ESMO open",
+    "title": "Genomic landscape of ERBB3 alterations in metastatic solid tumours: a real-world data analysis.",
+    "topics": [
+      "Colorrectal",
+      "Gástrico y unión gastroesofágica",
+      "Vías biliares"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42970860/",
+    "versions": []
+  },
+  "pmid:42972108": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 3",
+    "description": "",
+    "doi": "10.1038/s41591-026-04710-1",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:42972108",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "42972108",
+    "publisher_url": "https://doi.org/10.1038/s41591-026-04710-1",
+    "signature": "b194759494bded72508ecb5afae6cc6298ee965cbc4478cdc5469d737806cab3",
+    "society": "",
+    "source": "Nature medicine",
+    "title": "Neoadjuvant botensilimab with or without balstilimab in pMMR and dMMR colon cancer: the phase 2 UNICORN trial.",
+    "topics": [
+      "Colorrectal"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42972108/",
+    "versions": []
+  },
+  "pmid:42973157": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 3",
+    "description": "",
+    "doi": "10.1093/jnci/djag258",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:42973157",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "42973157",
+    "publisher_url": "https://doi.org/10.1093/jnci/djag258",
+    "signature": "59ce6e788f73eb7acb925faa0c91b323bbb662071c1a8656a33ad7a9530b8035",
+    "society": "",
+    "source": "Journal of the National Cancer Institute",
+    "title": "Re: Liver cancer risk in the context of today's hormonal contraceptives.",
+    "topics": [
+      "Hepatocarcinoma"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42973157/",
+    "versions": []
+  },
+  "pmid:42974734": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 3",
+    "description": "",
+    "doi": "10.1158/2159-8290.cd-nw2026-0103",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:42974734",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "42974734",
+    "publisher_url": "https://doi.org/10.1158/2159-8290.cd-nw2026-0103",
+    "signature": "1ef0cf635d0a406c41e8e2918d080507730381b3b4f2969d4989bb8ca84552da",
+    "society": "",
+    "source": "Cancer discovery",
+    "title": "Early-Onset Colorectal Tumors Show Distinct Molecular Makeup.",
+    "topics": [
+      "Colorrectal"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42974734/",
+    "versions": []
+  },
+  "pmid:42974945": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 3",
+    "description": "",
+    "doi": "10.1093/jnci/djag406",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:42974945",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "42974945",
+    "publisher_url": "https://doi.org/10.1093/jnci/djag406",
+    "signature": "eca29674c12326919165c7066da1c8ac60968a05aa2e19e30b0a1460b03946ec",
+    "society": "",
+    "source": "Journal of the National Cancer Institute",
+    "title": "Electronic health record embedded frailty index and outcomes among older adults receiving cancer chemotherapy.",
+    "topics": [
+      "Colorrectal"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42974945/",
+    "versions": []
+  },
+  "pmid:42976418": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 3",
+    "description": "",
+    "doi": "10.1016/j.esmoop.2026.108603",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:42976418",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "42976418",
+    "publisher_url": "https://doi.org/10.1016/j.esmoop.2026.108603",
+    "signature": "dcf6edc1433df38e3d3add74eeedd10c04f63ca10fc0af534b18cac11ba35c37",
+    "society": "",
+    "source": "ESMO open",
+    "title": "Pembrolizumab plus FLOT as neoadjuvant and adjuvant therapy in locally advanced gastric and gastroesophageal junction cancer: analysis of the FLOT cohort from the phase 3 KEYNOTE-585 study.",
+    "topics": [
+      "Gástrico y unión gastroesofágica",
+      "Esófago"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42976418/",
+    "versions": []
+  },
+  "pmid:42982997": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 5",
+    "description": "",
+    "doi": "10.1038/s41591-026-04771-2",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:42982997",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "42982997",
+    "publisher_url": "https://doi.org/10.1038/s41591-026-04771-2",
+    "signature": "390e5fab139d5fe72bcf7e496f9de8e5e0c73a0bedefe0f3fb37b57c7f7dd2c7",
+    "society": "",
+    "source": "Nature medicine",
+    "title": "A tumor transcriptomic atlas across eight decades of life reveals distinct features of early-onset colorectal cancer.",
+    "topics": [
+      "Colorrectal"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42982997/",
+    "versions": []
+  },
+  "pmid:42988026": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 5",
+    "description": "",
+    "doi": "10.1016/j.cgh.2026.10.029",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:42988026",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "42988026",
+    "publisher_url": "https://doi.org/10.1016/j.cgh.2026.10.029",
+    "signature": "d6d49ab6e90e18b9396c83497990d251dc5b5ff61780d276450d01344d305fdb",
+    "society": "",
+    "source": "Clinical gastroenterology and hepatology : the official clinical practice journal of the American Gastroenterological Association",
+    "title": "Risk of post-colonoscopy colorectal cancer according to colonoscopy quality and polyp findings.",
+    "topics": [
+      "Colorrectal"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42988026/",
+    "versions": []
+  },
+  "pmid:42992951": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 6",
+    "description": "",
+    "doi": "10.1093/jnci/djag422",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:42992951",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "42992951",
+    "publisher_url": "https://doi.org/10.1093/jnci/djag422",
+    "signature": "6285c072d4b18032b2c520f4844d0f00c7c937546e49ed04a3548a5655a7bd9e",
+    "society": "",
+    "source": "Journal of the National Cancer Institute",
+    "title": "The risk of gastric mucosa-associated lymphoid tissue (MALT) lymphoma after Helicobacter pylori eradication treatment.",
+    "topics": [
+      "Gástrico y unión gastroesofágica"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42992951/",
+    "versions": []
+  },
+  "pmid:42993920": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Guías y protocolos",
+    "date": "2026 11 6",
+    "description": "",
+    "doi": "10.1200/jco-25-02761",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:42993920",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "42993920",
+    "publisher_url": "https://doi.org/10.1200/jco-25-02761",
+    "signature": "ab2cdefd7569ba336ea5ec3551e704011ee7783d69990047b618a137ff6a3239",
+    "society": "",
+    "source": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+    "title": "Image-Based Consensus Molecular Subtyping Refines Prognostication in Stage II/III Colorectal Cancer: A Retrospective Analysis of the SCOT Trial.",
+    "topics": [
+      "Colorrectal"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42993920/",
+    "versions": []
+  },
+  "pmid:42994246": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 6",
+    "description": "",
+    "doi": "10.1016/j.ejca.2026.117821",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:42994246",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "42994246",
+    "publisher_url": "https://doi.org/10.1016/j.ejca.2026.117821",
+    "signature": "ae49fc841c1321191c04d28ba47bb690cee86d82acc35aae2e12f8c87d4f7b72",
+    "society": "",
+    "source": "European journal of cancer (Oxford, England : 1990)",
+    "title": "Novel adenoma-immune phenotypes are associated with risk of metachronous polyps and colorectal cancer in a bowel screening cohort.",
+    "topics": [
+      "Colorrectal"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42994246/",
+    "versions": []
+  },
+  "pmid:42999985": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 8",
+    "description": "",
+    "doi": "10.1158/2159-8290.cd-26-1628",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:42999985",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "42999985",
+    "publisher_url": "https://doi.org/10.1158/2159-8290.cd-26-1628",
+    "signature": "b34701750765efce6f57a78cf53f39dc584fc5fe919c4b7ef31be73cbfd22ec8",
+    "society": "",
+    "source": "Cancer discovery",
+    "title": "The Transformation of Oncology Drug Development in China: Toward a New Phase of Innovation.",
+    "topics": [
+      "Hepatocarcinoma"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42999985/",
+    "versions": []
+  },
+  "pmid:43006908": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 10",
+    "description": "",
+    "doi": "10.1093/jnci/djag420",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:43006908",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "43006908",
+    "publisher_url": "https://doi.org/10.1093/jnci/djag420",
+    "signature": "cdead2e300ca65743882ff2fdb6f99dc81cb0627af81ccf80a8ffaf727b152d4",
+    "society": "",
+    "source": "Journal of the National Cancer Institute",
+    "title": "US geographical disparities in young-onset colorectal cancer mortality, 1990-2023.",
+    "topics": [
+      "Colorrectal"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43006908/",
+    "versions": []
+  },
+  "pmid:43006918": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 10",
+    "description": "",
+    "doi": "10.1093/jnci/djag423",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:43006918",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "43006918",
+    "publisher_url": "https://doi.org/10.1093/jnci/djag423",
+    "signature": "1d812c09abb2510d854213d4b036e1eb92f797df4bbefb7d5ab4e652e83f7f00",
+    "society": "",
+    "source": "Journal of the National Cancer Institute",
+    "title": "Advancing gastric cancer prevention in the United States: perspectives from a congressional forum.",
+    "topics": [
+      "Gástrico y unión gastroesofágica"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43006918/",
+    "versions": []
+  },
+  "pmid:43012521": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 11",
+    "description": "",
+    "doi": "10.1158/2159-8290.cd-rw2026-100",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:43012521",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "43012521",
+    "publisher_url": "https://doi.org/10.1158/2159-8290.cd-rw2026-100",
+    "signature": "216a732e888678a98c34171dbb8e6bb6de405366a598f75e0bc37cafcb29930e",
+    "society": "",
+    "source": "Cancer discovery",
+    "title": "Hepatocyte Serine Fuels Pancreatic Cancer Liver Metastasis.",
+    "topics": [
+      "Páncreas"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43012521/",
+    "versions": []
+  },
+  "pmid:43012674": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 11",
+    "description": "",
+    "doi": "10.1158/2159-8290.cd-26-0498",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:43012674",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "43012674",
+    "publisher_url": "https://doi.org/10.1158/2159-8290.cd-26-0498",
+    "signature": "195c7c86ab0d2a28c2d290fba0110df73a3575836c0579a9700f14ab722d4f84",
+    "society": "",
+    "source": "Cancer discovery",
+    "title": "Latent Squamous Plasticity Licensed by Chromatin-State Remodeling Dictates Therapeutic Susceptibility in Cholangiocarcinoma.",
+    "topics": [
+      "Vías biliares"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43012674/",
+    "versions": []
+  },
+  "pmid:43014085": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 11",
+    "description": "",
+    "doi": "10.1016/j.esmoop.2026.108617",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:43014085",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "43014085",
+    "publisher_url": "https://doi.org/10.1016/j.esmoop.2026.108617",
+    "signature": "4de40a8fe9e22781f9cf6064fe8699518d3afae217953a7333c1305d8fc49973",
+    "society": "",
+    "source": "ESMO open",
+    "title": "Nivolumab and total neoadjuvant treatment for locally advanced rectal cancer: results of a phase II trial (CA209-8M4).",
+    "topics": [
+      "Colorrectal"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43014085/",
+    "versions": []
+  },
+  "pmid:43014141": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 11",
+    "description": "",
+    "doi": "10.1016/j.ejca.2026.118174",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:43014141",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "43014141",
+    "publisher_url": "https://doi.org/10.1016/j.ejca.2026.118174",
+    "signature": "d25aad3d154aa577f02ae4d8171aa998829d0ec61b90591779629f4d66d4946a",
+    "society": "",
+    "source": "European journal of cancer (Oxford, England : 1990)",
+    "title": "Liver cancer incidence trends in younger versus older adults over time: an analysis of population-based cancer registry data.",
+    "topics": [
+      "Vías biliares",
+      "Hepatocarcinoma"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43014141/",
+    "versions": []
+  },
+  "pmid:43014597": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 11",
+    "description": "",
+    "doi": "10.1016/j.cgh.2026.10.033",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:43014597",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "43014597",
+    "publisher_url": "https://doi.org/10.1016/j.cgh.2026.10.033",
+    "signature": "907b3db1f2678219f8e71332e1c6ac85b21615d5bf636bfadd77bf9247cc64a4",
+    "society": "",
+    "source": "Clinical gastroenterology and hepatology : the official clinical practice journal of the American Gastroenterological Association",
+    "title": "Natural history and pancreatic cancer risk in PRSS1-associated hereditary pancreatitis: a nationwide cohort.",
+    "topics": [
+      "Páncreas"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43014597/",
+    "versions": []
+  },
+  "pmid:43018467": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 12",
+    "description": "",
+    "doi": "10.1158/2159-8290.cd-26-0691",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:43018467",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "43018467",
+    "publisher_url": "https://doi.org/10.1158/2159-8290.cd-26-0691",
+    "signature": "aee6950262c242eaefb35368181a8500a3fb414ebb8d43ec3a99d7b0e7f22b55",
+    "society": "",
+    "source": "Cancer discovery",
+    "title": "Perivascular epithelial remodeling is reflected in circulating cfDNA methylation signals as detection markers for early esophageal tumorigenesis.",
+    "topics": [
+      "Esófago"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43018467/",
+    "versions": []
+  },
+  "pmid:43018949": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 12",
+    "description": "",
+    "doi": "10.1001/jama.2026.20250",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:43018949",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "43018949",
+    "publisher_url": "https://doi.org/10.1001/jama.2026.20250",
+    "signature": "351132a7e187c45c3f1181ea3f9aef7be910124fb7a10920ec34f61f3f9f980b",
+    "society": "",
+    "source": "JAMA",
+    "title": "Izalontamab Brengitecan in Recurrent or Metastatic Esophageal Squamous Cell Carcinoma: The PANKU-Esophagus01 Randomized Clinical Trial.",
+    "topics": [
+      "Esófago"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43018949/",
+    "versions": []
+  },
+  "pmid:43018960": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 12",
+    "description": "",
+    "doi": "10.1001/jama.2026.23165",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:43018960",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "43018960",
+    "publisher_url": "https://doi.org/10.1001/jama.2026.23165",
+    "signature": "32e2f126f893e46a2254102b976ec1ed32d8da09724479c81dbf663fe7bd1cf2",
+    "society": "",
+    "source": "JAMA",
+    "title": "Izalontamab Brengitecan in Recurrent or Metastatic Esophageal Squamous Cell Carcinoma: Research Summary.",
+    "topics": [
+      "Esófago"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43018960/",
+    "versions": []
+  },
+  "pmid:43019709": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 12",
+    "description": "",
+    "doi": "10.1016/j.ejca.2026.117822",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:43019709",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "43019709",
+    "publisher_url": "https://doi.org/10.1016/j.ejca.2026.117822",
+    "signature": "2ce2616bd2cb8a3a2f0e72a5b653507eb68d09dd736ee6a9368324506fc3ae2b",
+    "society": "",
+    "source": "European journal of cancer (Oxford, England : 1990)",
+    "title": "Mapping the overlap of predictive biomarkers in an advanced Austrian multicenter gastroesophageal adenocarcinoma real-world cohort - results from the AGMT GASTRIC-5 registry.",
+    "topics": [
+      "Gástrico y unión gastroesofágica",
+      "Esófago"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43019709/",
+    "versions": []
+  },
+  "pmid:43020098": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 12",
+    "description": "",
+    "doi": "10.1016/s0140-6736(26)01600-4",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:43020098",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "43020098",
+    "publisher_url": "https://doi.org/10.1016/s0140-6736(26)01600-4",
+    "signature": "175ecc5110b67d19599b332fdf2734eb1c5df7aa25213036850a359a2465b5f9",
+    "society": "",
+    "source": "Lancet (London, England)",
+    "title": "Lynch syndrome.",
+    "topics": [
+      "Colorrectal"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43020098/",
+    "versions": []
+  },
+  "pmid:43020650": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 12",
+    "description": "",
+    "doi": "10.1136/gutjnl-2026-339761",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:43020650",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "43020650",
+    "publisher_url": "https://doi.org/10.1136/gutjnl-2026-339761",
+    "signature": "b6b888381383fd6bf2acbeb6877b0b886df4c9cec111d878963ab95e278bf141",
+    "society": "",
+    "source": "Gut",
+    "title": "Shigella flexneri activates the mature DC-Tfh axis to drive tertiary lymphoid structure neogenesis and maturation in colorectal tumour microenvironments.",
+    "topics": [
+      "Colorrectal"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43020650/",
+    "versions": []
+  },
+  "pmid:43025066": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 14",
+    "description": "",
+    "doi": "10.1016/j.ejca.2026.118141",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:43025066",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "43025066",
+    "publisher_url": "https://doi.org/10.1016/j.ejca.2026.118141",
+    "signature": "e64ca99abc91419baca6b8fdadb9797c8edbc0d24f35c405537b642450105860",
+    "society": "",
+    "source": "European journal of cancer (Oxford, England : 1990)",
+    "title": "Factors associated with chemotherapy free interval (CFI) after induction chemotherapy in metastatic colorectal cancer (mCRC) based on a meta-analysis on ARCAD CRC database: The CFI-SCORE project.",
+    "topics": [
+      "Colorrectal"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43025066/",
+    "versions": []
+  },
+  "pmid:43025725": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 14",
+    "description": "",
+    "doi": "10.1016/j.cgh.2026.09.058",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:43025725",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "43025725",
+    "publisher_url": "https://doi.org/10.1016/j.cgh.2026.09.058",
+    "signature": "05b45b2af09277b3987d5de99876f1e696c791569ed058efe3d88dfe98f09136",
+    "society": "",
+    "source": "Clinical gastroenterology and hepatology : the official clinical practice journal of the American Gastroenterological Association",
+    "title": "Pre-Liver Transplant Immunotherapy and Post-Transplant Outcomes in HCC: Global LIFT-HCC-1 Study.",
+    "topics": [
+      "Hepatocarcinoma"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43025725/",
+    "versions": []
+  },
+  "pmid:43025727": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 14",
+    "description": "",
+    "doi": "10.1016/j.cgh.2026.10.035",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:43025727",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "43025727",
+    "publisher_url": "https://doi.org/10.1016/j.cgh.2026.10.035",
+    "signature": "36950dc4d4f033db2ba94f822d9004123fdcb1d41a0e2ce746c1ce03c782722d",
+    "society": "",
+    "source": "Clinical gastroenterology and hepatology : the official clinical practice journal of the American Gastroenterological Association",
+    "title": "Zero-Event Weighting May Distort Gene-Stratified Gastric and Duodenal Cancer Incidence Estimates in Lynch Syndrome.",
+    "topics": [
+      "Gástrico y unión gastroesofágica"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43025727/",
+    "versions": []
+  },
+  "pmid:43025768": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 14",
+    "description": "",
+    "doi": "10.1053/j.gastro.2026.10.383",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:43025768",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "43025768",
+    "publisher_url": "https://doi.org/10.1053/j.gastro.2026.10.383",
+    "signature": "007b507cc7420514d94995db6498d073021212160f8194dcf37f72321cc9da77",
+    "society": "",
+    "source": "Gastroenterology",
+    "title": "Depletion of Endogenous IL-18 Suppresses Pancreatic Cancer Progression, Reprograms the Tumor Microenvironment, and Enhances KRAS Inhibitor Efficacy.",
+    "topics": [
+      "Páncreas"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43025768/",
+    "versions": []
+  },
+  "pmid:43025988": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 14",
+    "description": "",
+    "doi": "10.1136/gutjnl-2026-339604",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:43025988",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "43025988",
+    "publisher_url": "https://doi.org/10.1136/gutjnl-2026-339604",
+    "signature": "87b62159fa97ee90f1c02e938ed917e90b2636199a3b8cee89018d756c90d2d5",
+    "society": "",
+    "source": "Gut",
+    "title": "GPNMB+ fibroblasts crosstalk with gastric epithelium to activate a pro-stemness niche in gastric cancer through IGF1R/SRC/FOSL1 feedback loop.",
+    "topics": [
+      "Gástrico y unión gastroesofágica"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43025988/",
+    "versions": []
+  },
+  "pmid:43034968": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 15",
+    "description": "",
+    "doi": "10.1007/s12094-026-04607-y",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:43034968",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "43034968",
+    "publisher_url": "https://doi.org/10.1007/s12094-026-04607-y",
+    "signature": "46037695124bf74a8f0f55b60dad051509121f7379c54546236f697157196714",
+    "society": "",
+    "source": "Clinical & translational oncology : official publication of the Federation of Spanish Oncology Societies and of the National Cancer Institute of Mexico",
+    "title": "Reassessing the evidence for HER2 discordance between primary and metastatic gastric cancer: a letter to the editor.",
+    "topics": [
+      "Gástrico y unión gastroesofágica"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43034968/",
+    "versions": []
+  },
+  "pmid:43037074": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 16",
+    "description": "",
+    "doi": "10.1093/jnci/djag432",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:43037074",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "43037074",
+    "publisher_url": "https://doi.org/10.1093/jnci/djag432",
+    "signature": "4107f34e414ee89b186556ecd3ac82059036ae07deea327fe7abd6c4db7f00cd",
+    "society": "",
+    "source": "Journal of the National Cancer Institute",
+    "title": "Eligibility and real-world use of adjuvant chemotherapy in colon cancer: a Dutch nationwide study.",
+    "topics": [
+      "Colorrectal"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43037074/",
+    "versions": []
+  },
+  "pmid:43037081": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 16",
+    "description": "",
+    "doi": "10.1093/jnci/djag439",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:43037081",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "43037081",
+    "publisher_url": "https://doi.org/10.1093/jnci/djag439",
+    "signature": "f435e4a8e5ec44ec335b6441ccd6a0569babbaf9677a9fbe5468f440d35f8b0b",
+    "society": "",
+    "source": "Journal of the National Cancer Institute",
+    "title": "RE: Alcohol Consumption and Colorectal Cancer Risk in Prediabetes and Diabetes: A Nationwide Cohort Study.",
+    "topics": [
+      "Colorrectal"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43037081/",
+    "versions": []
+  },
+  "pmid:43037090": {
+    "alerts": [
+      "2026-11-16T20:59:58+00:00"
+    ],
+    "category": "Artículos científicos",
+    "date": "2026 11 16",
+    "description": "",
+    "doi": "10.1093/jnci/djag440",
+    "excerpt": "",
+    "first_seen": "2026-11-16T20:59:58+00:00",
+    "key": "pmid:43037090",
+    "kind": "pubmed",
+    "last_seen": "2026-11-16T20:59:58+00:00",
+    "pmid": "43037090",
+    "publisher_url": "https://doi.org/10.1093/jnci/djag440",
+    "signature": "496409d625aa968639033f2c6acf1124a17fa1199b8eda4926c1cb19bc8cc6b3",
+    "society": "",
+    "source": "Journal of the National Cancer Institute",
+    "title": "Re: Alcohol consumption and colorectal cancer risk in prediabetes and diabetes: a nationwide cohort study.",
+    "topics": [
+      "Colorrectal"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43037090/",
+    "versions": []
+  }
+}

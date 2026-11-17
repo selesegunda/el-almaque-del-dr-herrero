@@ -27,8 +27,8 @@ Si se crea el repositorio después de las fechas iniciales, la fase programada d
 
 ## Horarios
 
-- **Fase inicial:** 17–23/11/2026, todos los días a las 07:15 UTC (08:15 CET).
-- **Fase semanal:** lunes a las 07:15 UTC desde el 30/11/2026 (08:15 en invierno; 09:15 en verano, España peninsular).
+- **Fase inicial:** 17–23/11/2026, todos los días a las 04:15 UTC (05:15 CET).
+- **Fase semanal:** lunes a las 04:15 UTC desde el 30/11/2026 (06:15 en invierno; 09:15 en verano, España peninsular).
 - Las ejecuciones programadas de GitHub pueden retrasarse u omitirse; no se garantiza puntualidad al minuto.
 - **A demanda:** botón **Run workflow** en GitHub → Actions. No hay botón de ejecución en la web pública, para no exponer un acceso privilegiado.
 - Para ajustar la hora o cadencia, modifica `.github/workflows/actualizar.yml`.

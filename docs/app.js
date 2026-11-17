@@ -1,6 +1,7 @@
 const $ = s => document.querySelector(s);
 const esc = s => String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const categories = ['Guías y protocolos','Artículos científicos','Comunicaciones científicas','Noticias'];
+const configuredTopics = ["Colorrectal", "Gástrico y unión gastroesofágica", "Esófago", "Páncreas", "Vías biliares", "Hepatocarcinoma", "Neuroendocrinos", "Neoplasias endocrinas", "Canal anal"];
 const state={category:'',limit:40};let data={records:[],runs:[]};
 const fmt=d=>{if(!d)return '—';const x=new Date(d);return Number.isNaN(+x)?d:x.toLocaleString('es-ES',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',timeZone:'Europe/Madrid'})};
 function runStatus(r){return r?.issues?.length ? `· ${r.issues.length} fuente(s) con incidencias` : ''}
@@ -24,7 +25,7 @@ function render(){
  $('#runinfo').innerHTML=run?`<p>${run.new} nuevas · ${run.updated} actualizadas · ${run.seen} referencias examinadas</p>${run.issues?.length?`<p class="issue">Incidencias: ${run.issues.map(x=>esc(x.source)).join(', ')}. Consulta el registro del proyecto para detalles.</p>`:''}`:'';
 }
 async function main(){try{const [r,h]=await Promise.all([fetch('records.json'),fetch('runs.json')]);if(!r.ok||!h.ok)throw Error('Faltan datos');const obj=await r.json();data.records=Object.values(obj);data.runs=await h.json();}catch(e){$('#statusline').textContent='No se han podido cargar los datos publicados.'}
-const topics=[...new Set(data.records.flatMap(x=>x.topics||[]))].sort();const sources=[...new Set(data.records.map(x=>x.source))].sort();
+const topics=[...new Set([...configuredTopics,...data.records.flatMap(x=>x.topics||[])])].sort((a,b)=>a.localeCompare(b,'es'));const sources=[...new Set(data.records.map(x=>x.source))].sort();
 $('#topic').innerHTML+=[...topics].map(x=>`<option>${esc(x)}</option>`).join('');$('#source').innerHTML+=[...sources].map(x=>`<option>${esc(x)}</option>`).join('');
 $('#run').innerHTML+=data.runs.slice().reverse().map(x=>`<option value="${esc(x.at)}">${fmt(x.at)} · ${x.new} nuevas / ${x.updated} actualizadas</option>`).join('');
 ['#search','#topic','#source','#status','#run'].forEach(x=>$(x).addEventListener('input',()=>{state.limit=40;render()}));

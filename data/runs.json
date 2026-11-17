@@ -266,5 +266,32 @@
       "Sociedades (parcial o total)"
     ],
     "updated": 0
+  },
+  {
+    "at": "2026-11-17T05:35:18+00:00",
+    "changes": [],
+    "issues": [
+      {
+        "error": "414 Client Error: Request-URI Too Long for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&tool=ElAlmaque&retmode=json&term=%28%22colorectal%22%5BTitle%2F",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/"
+      },
+      {
+        "error": "403 Client Error: Forbidden for url: https://www.asco.org/gastrointestinal-cancer-guidelines",
+        "source": "ASCO",
+        "url": "https://www.asco.org/gastrointestinal-cancer-guidelines"
+      },
+      {
+        "error": "403 Client Error: Forbidden for url: https://www.asco.org/gi/program/abstracts-posters",
+        "source": "ASCO",
+        "url": "https://www.asco.org/gi/program/abstracts-posters"
+      }
+    ],
+    "new": 0,
+    "seen": 0,
+    "sources_ok": [
+      "Sociedades (parcial o total)"
+    ],
+    "updated": 0
   }
 ]

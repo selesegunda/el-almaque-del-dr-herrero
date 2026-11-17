@@ -9,9 +9,9 @@ on:
   schedule:
     # First daily phase: 17-23 November 2026, 07:15 UTC = 08:15 Madrid (CET).
     # GitHub uses UTC for scheduled jobs.
-    - cron: '15 7 17-23 11 *'
+    - cron: '15 4 17-23 11 *'
     # Weekly afterwards: Mondays 07:15 UTC (08:15 winter, 09:15 summer Madrid).
-    - cron: '15 7 * * 1'
+    - cron: '15 4 * * 1'
 permissions:
   contents: write
   pages: write

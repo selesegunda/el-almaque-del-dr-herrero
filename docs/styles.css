@@ -3,8 +3,9 @@
 /* Paleta verde NVIDIA: verde principal #76B900, superficie verde muy suave. */
 body{background:#F4F9EB;color:#25351B}
 a{color:#356000}
-header{background:#76B900;color:#172608}
-header p{color:#263A12}
+header{background:#76B900;color:#355C06}
+header h1{color:#355C06}
+header p{color:#24380E}
 .eyebrow{color:#24380E}
 header .title-line{display:block}
 .metric,.item,.info,.history{border-color:#DCE8CD}

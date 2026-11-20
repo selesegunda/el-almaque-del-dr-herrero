@@ -32,11 +32,15 @@ TOPICS = {
 SOCIETIES = ("SEOM", "SAOM", "ESMO", "ASCO")
 # Allowlisted journal names; PubMed filters can be extended in this one file.
 JOURNALS = [
-    "N Engl J Med", "Lancet", "Lancet Oncol", "JAMA", "JAMA Oncol",
-    "J Clin Oncol", "Ann Oncol", "ESMO Open", "Clin Transl Oncol", "Nat Med",
+    # The New England Journal of Medicine (NEJM): include full title and NLM abbreviation.
+    "New England Journal of Medicine", "N Engl J Med",
+    "Lancet", "Lancet Oncol", "JAMA", "JAMA Oncol",
+    "J Clin Oncol", "Journal of Clinical Oncology", "Ann Oncol", "ESMO Open",
+    "Clin Transl Oncol", "Clinical and Translational Oncology", "Nat Med",
     "Gut", "Gastroenterology", "Clin Gastroenterol Hepatol",
     "Cancer Discov", "J Natl Cancer Inst", "Eur J Cancer", "Cancer",
-    "JCO Oncol Pract", "JCO Precis Oncol", "Endocr Relat Cancer",
+    "JCO Oncol Pract", "JCO Precis Oncol", "JCO Oncology Practice", "JCO Precision Oncology",
+    "Endocr Relat Cancer",
     "Thyroid", "J Clin Endocrinol Metab", "Neuroendocrinology",
 ]
 # Pages used as a lightweight extra source of official links. Site layouts may change.

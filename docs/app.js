@@ -2,9 +2,11 @@ const $ = s => document.querySelector(s);
 const esc = s => String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const categories = ['Guías y protocolos','Artículos científicos','Comunicaciones científicas','Noticias'];
 const journalFilters = [
- {label:'NEJM', aliases:['New England Journal of Medicine','N Engl J Med','N Engl J Med (N Y)']}
+ {label:'N Engl J Med', aliases:['NEJM','N Engl J Med','New England Journal of Medicine','N Engl J Med (N Y)']}
 ];
 const normSource = s => String(s||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').trim().toLowerCase();
+// Fuentes ocultas como opciones independientes; sus artículos siguen en «Todas».
+const hiddenSourceAliases = new Set(['Clin Transl Oncol','Clinical and Translational Oncology','J Clin Oncol','Journal of Clinical Oncology','JCO Oncol Pract','JCO Precis Oncol','JCO Oncology Practice','JCO Precision Oncology','Gastroenterology','Clin Gastroenterol Hepatol','Clinical Gastroenterology and Hepatology'].map(normSource));
 const sourceAliases = label => journalFilters.find(x=>x.label===label)?.aliases || [label];
 const sourceMatches = (actual,label) => sourceAliases(label).some(a=>normSource(a)===normSource(actual));
 const sourceLabel = actual => journalFilters.find(x=>x.aliases.some(a=>normSource(a)===normSource(actual)))?.label || actual;
@@ -32,7 +34,7 @@ function render(){
  $('#runinfo').innerHTML=run?`<p>${run.new} nuevas · ${run.updated} actualizadas · ${run.seen} referencias examinadas</p>${run.issues?.length?`<p class="issue">Incidencias: ${run.issues.map(x=>esc(x.source)).join(', ')}. Consulta el registro del proyecto para detalles.</p>`:''}`:'';
 }
 async function main(){try{const [r,h]=await Promise.all([fetch('records.json'),fetch('runs.json')]);if(!r.ok||!h.ok)throw Error('Faltan datos');const obj=await r.json();data.records=Object.values(obj);data.runs=await h.json();}catch(e){$('#statusline').textContent='No se han podido cargar los datos publicados.'}
-const topics=[...new Set([...configuredTopics,...data.records.flatMap(x=>x.topics||[])])].sort((a,b)=>a.localeCompare(b,'es'));const knownAliases=new Set(journalFilters.flatMap(x=>x.aliases.map(normSource)));const otherSources=[...new Set(data.records.map(x=>x.source).filter(x=>!knownAliases.has(normSource(x))))].sort((a,b)=>a.localeCompare(b,'es'));
+const topics=[...new Set([...configuredTopics,...data.records.flatMap(x=>x.topics||[])])].sort((a,b)=>a.localeCompare(b,'es'));const knownAliases=new Set(journalFilters.flatMap(x=>x.aliases.map(normSource)));const otherSources=[...new Set(data.records.map(x=>x.source).filter(x=>!knownAliases.has(normSource(x))&&!hiddenSourceAliases.has(normSource(x))))].sort((a,b)=>a.localeCompare(b,'es'));
 $('#topic').innerHTML+=[...topics].map(x=>`<option>${esc(x)}</option>`).join('');$('#source').innerHTML+=journalFilters.map(x=>`<option value="${esc(x.label)}">${esc(x.label)}</option>`).join('')+[...otherSources].map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');
 $('#run').innerHTML+=data.runs.slice().reverse().map(x=>`<option value="${esc(x.at)}">${fmt(x.at)} · ${x.new} nuevas / ${x.updated} actualizadas</option>`).join('');
 ['#search','#topic','#source','#status','#run'].forEach(x=>$(x).addEventListener('input',()=>{state.limit=40;render()}));

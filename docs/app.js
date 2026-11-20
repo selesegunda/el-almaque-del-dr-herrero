@@ -1,6 +1,16 @@
 const $ = s => document.querySelector(s);
 const esc = s => String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const categories = ['Guías y protocolos','Artículos científicos','Comunicaciones científicas','Noticias'];
+const journalFilters = [
+ {label:'CTO', aliases:['Clinical and Translational Oncology','Clin Transl Oncol']},
+ {label:'JCO', aliases:['Journal of Clinical Oncology','J Clin Oncol','JCO','JCO Oncology Practice','JCO Oncol Pract','JCO Precision Oncology','JCO Precis Oncol']},
+ {label:'Gastroenterology', aliases:['Gastroenterology']},
+ {label:'NEJM', aliases:['New England Journal of Medicine','N Engl J Med','N Engl J Med (N Y)']}
+];
+const normSource = s => String(s||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').trim().toLowerCase();
+const sourceAliases = label => journalFilters.find(x=>x.label===label)?.aliases || [label];
+const sourceMatches = (actual,label) => sourceAliases(label).some(a=>normSource(a)===normSource(actual));
+const sourceLabel = actual => journalFilters.find(x=>x.aliases.some(a=>normSource(a)===normSource(actual)))?.label || actual;
 const configuredTopics = ["Colorrectal", "Gástrico y unión gastroesofágica", "Esófago", "Páncreas", "Vías biliares", "Hepatocarcinoma", "Neuroendocrinos", "Neoplasias endocrinas", "Canal anal"];
 const state={category:'',limit:40};let data={records:[],runs:[]};
 const fmt=d=>{if(!d)return '—';const x=new Date(d);return Number.isNaN(+x)?d:x.toLocaleString('es-ES',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',timeZone:'Europe/Madrid'})};
@@ -10,7 +20,7 @@ function render(){
  const run=runs.find(x=>x.at===chosen);
  const changeMap=new Map((run?.changes||[]).map(x=>[x.key,x.status]));
  const q=$('#search').value.trim().toLowerCase(),topic=$('#topic').value,source=$('#source').value,status=$('#status').value;
- let items=all.filter(x=>(!chosen||changeMap.has(x.key))&&(!state.category||x.category===state.category)&&(!topic||x.topics.includes(topic))&&(!source||x.source===source)&&(!q||[x.title,x.source,x.doi,x.pmid,...x.topics].join(' ').toLowerCase().includes(q)));
+ let items=all.filter(x=>(!chosen||changeMap.has(x.key))&&(!state.category||x.category===state.category)&&(!topic||x.topics.includes(topic))&&(!source||sourceMatches(x.source,source))&&(!q||[x.title,x.source,x.doi,x.pmid,...x.topics].join(' ').toLowerCase().includes(q)));
  if(status)items=items.filter(x=>(chosen?changeMap.get(x.key):(x.versions.length?'Actualizada':'Nueva'))===status);
  items.sort((a,b)=>categories.indexOf(a.category)-categories.indexOf(b.category)||b.first_seen.localeCompare(a.first_seen));
  const rcount=chosen?run.changes.length:all.length;
@@ -20,13 +30,13 @@ function render(){
  $('#statusline').textContent=`${items.length} referencias encontradas · Última consulta: ${runs.length?fmt(runs.at(-1).at):'pendiente'}${runStatus(runs.at(-1))}`;
  $('#records').innerHTML=items.length?items.slice(0,state.limit).map(x=>{
  const st=chosen?changeMap.get(x.key):(x.versions.length?'Actualizada':'Nueva');
- return `<article class="item"><div class="meta">${esc(x.category)} · ${esc(x.source)} · Publicación: ${esc(x.date||'No verificada')}</div><h3>${esc(x.title)}</h3><div class="chips"><span class="chip ${st==='Nueva'?'new':'updated'}">${esc(st)}</span>${x.topics.map(t=>`<span class="chip">${esc(t)}</span>`).join('')}</div>${x.description?`<p class="muted">${esc(x.description)}</p>`:''}<div class="meta">Detectado: ${fmt(x.first_seen)}${x.doi?' · DOI: '+esc(x.doi):''}${x.pmid?' · PMID: '+esc(x.pmid):''}</div><p><a href="${esc(x.publisher_url||x.url)}" target="_blank" rel="noopener noreferrer">Ver publicación original</a> ${x.publisher_url?`· <a href="${esc(x.url)}" target="_blank" rel="noopener noreferrer">Ficha en PubMed</a>`:''}</p>${x.versions.length?`<details><summary>Histórico de cambios registrados (${x.versions.length})</summary><ul>${x.versions.map(v=>`<li>${fmt(v.recorded_at)} — ${esc(v.title)} (${esc(v.date)})</li>`).join('')}</ul></details>`:''}</article>`}).join(''):'<div class="empty">No hay publicaciones para estos filtros. Si es la primera visita, los datos se cargarán tras la primera ejecución del programa.</div>';
+ return `<article class="item"><div class="meta">${esc(x.category)} · ${esc(sourceLabel(x.source))} · Publicación: ${esc(x.date||'No verificada')}</div><h3>${esc(x.title)}</h3><div class="chips"><span class="chip ${st==='Nueva'?'new':'updated'}">${esc(st)}</span>${x.topics.map(t=>`<span class="chip">${esc(t)}</span>`).join('')}</div>${x.description?`<p class="muted">${esc(x.description)}</p>`:''}<div class="meta">Detectado: ${fmt(x.first_seen)}${x.doi?' · DOI: '+esc(x.doi):''}${x.pmid?' · PMID: '+esc(x.pmid):''}</div><p><a href="${esc(x.publisher_url||x.url)}" target="_blank" rel="noopener noreferrer">Ver publicación original</a> ${x.publisher_url?`· <a href="${esc(x.url)}" target="_blank" rel="noopener noreferrer">Ficha en PubMed</a>`:''}</p>${x.versions.length?`<details><summary>Histórico de cambios registrados (${x.versions.length})</summary><ul>${x.versions.map(v=>`<li>${fmt(v.recorded_at)} — ${esc(v.title)} (${esc(v.date)})</li>`).join('')}</ul></details>`:''}</article>`}).join(''):'<div class="empty">No hay publicaciones para estos filtros. Si es la primera visita, los datos se cargarán tras la primera ejecución del programa.</div>';
  $('#more').hidden=items.length<=state.limit;
  $('#runinfo').innerHTML=run?`<p>${run.new} nuevas · ${run.updated} actualizadas · ${run.seen} referencias examinadas</p>${run.issues?.length?`<p class="issue">Incidencias: ${run.issues.map(x=>esc(x.source)).join(', ')}. Consulta el registro del proyecto para detalles.</p>`:''}`:'';
 }
 async function main(){try{const [r,h]=await Promise.all([fetch('records.json'),fetch('runs.json')]);if(!r.ok||!h.ok)throw Error('Faltan datos');const obj=await r.json();data.records=Object.values(obj);data.runs=await h.json();}catch(e){$('#statusline').textContent='No se han podido cargar los datos publicados.'}
-const topics=[...new Set([...configuredTopics,...data.records.flatMap(x=>x.topics||[])])].sort((a,b)=>a.localeCompare(b,'es'));const sources=[...new Set(data.records.map(x=>x.source))].sort();
-$('#topic').innerHTML+=[...topics].map(x=>`<option>${esc(x)}</option>`).join('');$('#source').innerHTML+=[...sources].map(x=>`<option>${esc(x)}</option>`).join('');
+const topics=[...new Set([...configuredTopics,...data.records.flatMap(x=>x.topics||[])])].sort((a,b)=>a.localeCompare(b,'es'));const knownAliases=new Set(journalFilters.flatMap(x=>x.aliases.map(normSource)));const otherSources=[...new Set(data.records.map(x=>x.source).filter(x=>!knownAliases.has(normSource(x))))].sort((a,b)=>a.localeCompare(b,'es'));
+$('#topic').innerHTML+=[...topics].map(x=>`<option>${esc(x)}</option>`).join('');$('#source').innerHTML+=journalFilters.map(x=>`<option value="${esc(x.label)}">${esc(x.label)}</option>`).join('')+[...otherSources].map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');
 $('#run').innerHTML+=data.runs.slice().reverse().map(x=>`<option value="${esc(x.at)}">${fmt(x.at)} · ${x.new} nuevas / ${x.updated} actualizadas</option>`).join('');
 ['#search','#topic','#source','#status','#run'].forEach(x=>$(x).addEventListener('input',()=>{state.limit=40;render()}));
 $('#tabs').addEventListener('click',e=>{const b=e.target.closest('[data-cat]');if(b){state.category=b.dataset.cat;state.limit=40;render()}});

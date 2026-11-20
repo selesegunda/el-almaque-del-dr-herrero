@@ -14,9 +14,6 @@ JS = r'''const $ = s => document.querySelector(s);
 const esc = s => String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const categories = ['Guías y protocolos','Artículos científicos','Comunicaciones científicas','Noticias'];
 const journalFilters = [
- {label:'CTO', aliases:['Clinical and Translational Oncology','Clin Transl Oncol']},
- {label:'JCO', aliases:['Journal of Clinical Oncology','J Clin Oncol','JCO','JCO Oncology Practice','JCO Oncol Pract','JCO Precision Oncology','JCO Precis Oncol']},
- {label:'Gastroenterology', aliases:['Gastroenterology']},
  {label:'NEJM', aliases:['New England Journal of Medicine','N Engl J Med','N Engl J Med (N Y)']}
 ];
 const normSource = s => String(s||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').trim().toLowerCase();

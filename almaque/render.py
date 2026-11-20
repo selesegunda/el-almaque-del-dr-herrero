@@ -12,7 +12,8 @@ CSS = '''*{box-sizing:border-box}body{margin:0;background:#f4f7f9;color:#21344a;
 /* Paleta verde NVIDIA y títulos verde oliva, conservada al regenerar la web. */
 body{background:#F4F9EB;color:#25351B}
 a{color:#356000}
-header{background:#76B900;color:#172608}
+header{background:#76B900;color:#355C06}
+header h1{color:#355C06}
 header p{color:#263A12}
 .eyebrow{color:#24380E}
 header .title-line{display:block}
